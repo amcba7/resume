@@ -1,94 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aman Mehra - Portfolio</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-    }
-    .navbar {
-      position: fixed;
-      width: 100%;
-      z-index: 1000;
-    }
-    .jumbotron {
-      background-image: url('images/home-page-bg.jpg'); /* Placeholder image for the background */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      color: #fff;
-      text-align: center;
-      padding: 100px 0;
-      margin-bottom: 0;
-      height: 100vh; /* Set height to viewport height */
-    }
-    .profile-img {
-      max-width: 200px;
-      border-radius: 50%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Mehra - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom CSS -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            transition: background-color 0.5s ease;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .navbar.nav-scroll {
+            background-color: #000;
+        }
+
+        .navbar.nav-transparent {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .jumbotron {
+            background-image: url('images/home-page-bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+            margin-bottom: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-img,
+        .display-4,
+        .lead,
+        .jumbotron p {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        .profile-img {
+            max-width: 200px;
+            border-radius: 50%;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .navbar a.nav-link {
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a.nav-link:hover {
+            color: #1eff00;
+        }
+    </style>
 </head>
+
 <body>
 
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">Aman Mehra</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarResponsive">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#home">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#skills">Skills</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#experiences">Experiences</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#projects">Personal Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#qualification">Qualification</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About Me</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-transparent">
+        <a class="navbar-brand" href="#">Aman Mehra</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skills.html">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experiences">Experiences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Personal Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#qualification">Qualification</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <!-- Add other navigation items as needed -->
+            </ul>
+        </div>
+    </nav>
 
-<!-- Jumbotron (Header) -->
-<header class="jumbotron" id="home">
-  <div class="container">
-    <!-- Add your profile picture here -->
-    <img src="images/face.JPEG" alt="Your Name" class="profile-img"> <!-- Placeholder image for the profile picture -->
-    <h1 class="display-4">Aman Mehra</h1>
-    <p class="lead">
-      Web Developer | Crafting digital experiences with a passion for innovation and creativity.
-    </p>
-    <p>
-      Explore my portfolio to see how I turn ideas into engaging and functional websites.
-    </p>
-  </div>
-</header>
+    <!-- Jumbotron (Header) -->
+    <header class="jumbotron" id="home">
+        <div class="container">
+            <img src="images/face.JPEG" alt="Your Name" class="profile-img">
+            <h1 class="display-4">Aman Mehra</h1>
+            <p class="lead">
+                Web Developer | Crafting digital experiences with a passion for innovation and creativity.
+            </p>
+            <p>
+                Explore my portfolio to see how I turn ideas into engaging and functional websites.
+            </p>
+        </div>
+    </header>
 
-<!-- Bootstrap JS and dependencies -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Smooth scrolling script -->
+    <script>
+        $(document).ready(function () {
+            $("a.nav-link").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- Scrolling animation script -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('.navbar').addClass('nav-scroll').removeClass('nav-transparent');
+                } else {
+                    $('.navbar').removeClass('nav-scroll').addClass('nav-transparent');
+                }
+            });
+
+        });
+    </script>
 
 </body>
+
 </html>
