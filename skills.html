@@ -1,0 +1,230 @@
+<!-- skills.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aman Mehra - Skills</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #f8f9fa; /* Set a background color */
+    }
+
+    .navbar {
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      transition: background-color 0.5s ease;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .navbar.nav-scroll {
+      background-color: #000;
+    }
+
+    .navbar.nav-transparent {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .jumbotron {
+      background-image: url('images/home-page-bg.jpg'); /* Same background image as home page */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+      margin-bottom: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      padding-top: 80px; /* Adjust spacing to avoid overlap with fixed navbar */
+    }
+
+    .skill-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      height: 100%; /* Set a fixed height for all skill cards */
+    }
+
+    .row [class*="col-"] {
+      margin-bottom: 20px; /* Add margin to all columns inside the row */
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding-top: 60px; /* Adjust spacing for smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-transparent">
+  <a class="navbar-brand" href="#">Aman Mehra</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="skills.html">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#experiences">Experiences</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Personal Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#qualification">Qualification</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+      <!-- Add other navigation items as needed -->
+    </ul>
+  </div>
+</nav>
+
+<!-- Skills Section -->
+<section id="skills" class="jumbotron">
+  <div class="container">
+    <h2 class="text-center mt-5 mb-4">My Skills</h2>
+
+    <div class="row">
+      <!-- HTML Skill Card -->
+      <div class="col-md-4">
+        <div class="skill-card">
+          <h4>HTML5</h4>
+          <p>Description: Proficient in creating structured, semantic markup with HTML5 for modern web development.</p>
+        </div>
+      </div>
+
+      <!-- CSS Skill Card -->
+      <div class="col-md-4">
+        <div class="skill-card">
+          <h4>CSS3</h4>
+          <p>Description: Skilled in styling web pages using CSS3, including responsive design techniques.</p>
+        </div>
+      </div>
+
+      <!-- JavaScript Skill Card -->
+      <div class="col-md-4">
+        <div class="skill-card">
+          <h4>JavaScript</h4>
+          <p>Description: Proficient in client-side scripting with JavaScript, including DOM manipulation and AJAX.</p>
+        </div>
+      </div>
+
+      <!-- Bootstrap Skill Card -->
+      <div class="col-md-4">
+        <div class="skill-card">
+          <h4>Bootstrap</h4>
+          <p>Description: Familiar with the Bootstrap framework for building responsive and mobile-first websites.</p>
+        </div>
+      </div>
+
+      <!-- PHP Skill Card -->
+      <div class="col-md-4">
+        <div class="skill-card">
+          <h4>PHP</h4>
+          <p>Description: Proficient in server-side scripting with PHP, creating dynamic web pages and applications.</p>
+        </div>
+      </div>
+
+      <!-- Laravel Skill Card -->
+      <div class="col-md-4">
+        <div class="skill-card">
+          <h4>Laravel</h4>
+          <p>Description: Learning Laravel for modern and efficient PHP web development.</p>
+        </div>
+      </div>
+
+      <!-- jQuery Skill Card -->
+      <div class="col-md-4">
+        <div class="skill-card">
+          <h4>jQuery</h4>
+          <p>Description: Skilled in using jQuery for simplifying client-side scripting and handling events.</p>
+        </div>
+      </div>
+      <!-- Add more skill cards as needed -->
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Smooth scrolling script -->
+<script>
+  $(document).ready(function() {
+    $("a.nav-link").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        var hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+</script>
+
+<!-- Scrolling animation script -->
+<script>
+  $(document).ready(function() {
+    // Highlight the active navigation item
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 50) {
+        $('.navbar').addClass('nav-scroll').removeClass('nav-transparent');
+      } else {
+        $('.navbar').removeClass('nav-scroll').addClass('nav-transparent');
+      }
+    });
+
+    // Add this script to highlight the active navigation item
+    // Get the current page URL
+    var url = window.location.href;
+
+    // Iterate over each nav link
+    $('ul.navbar-nav li a').each(function() {
+      // Check if the URL contains the href of the current nav link
+      if (url.includes(this.href)) {
+        // Add the 'active' class to highlight the active nav link
+        $(this).addClass('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
