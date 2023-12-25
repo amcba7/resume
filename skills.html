@@ -13,8 +13,14 @@
     body {
       margin: 0;
       padding: 0;
-      overflow: hidden;
-      background-color: #f8f9fa; /* Set a background color */
+      overflow-y: scroll; /* Enable vertical scrolling */
+      background: #948E99;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to bottom, #2E1437, #948E99);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to bottom, #2E1437, #948E99);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color: white; /* Change text color to white */
     }
 
     .navbar {
@@ -34,24 +40,9 @@
       background-color: rgba(0, 0, 0, 0.7);
     }
 
-    .jumbotron {
-      background-image: url('images/home-page-bg.jpg'); /* Same background image as home page */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      color: #fff;
-      text-align: center;
-      padding: 100px 0;
-      margin-bottom: 0;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
     .container {
-      padding-top: 80px; /* Adjust spacing to avoid overlap with fixed navbar */
+      padding-top: 80px;
+      padding-bottom: 80px;
     }
 
     .skill-card {
@@ -59,16 +50,16 @@
       border-radius: 8px;
       padding: 20px;
       margin-bottom: 20px;
-      height: 100%; /* Set a fixed height for all skill cards */
+      background-color: rgba(255, 255, 255, 0.9); /* Light white background for cards */
     }
 
     .row [class*="col-"] {
-      margin-bottom: 20px; /* Add margin to all columns inside the row */
+      margin-bottom: 20px;
     }
 
     @media (max-width: 768px) {
       .container {
-        padding-top: 60px; /* Adjust spacing for smaller screens */
+        padding-top: 60px;
       }
     }
   </style>
@@ -110,7 +101,7 @@
 </nav>
 
 <!-- Skills Section -->
-<section id="skills" class="jumbotron">
+<section id="skills">
   <div class="container">
     <h2 class="text-center mt-5 mb-4">My Skills</h2>
 
