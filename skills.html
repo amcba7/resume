@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,7 +56,8 @@
 
     .card-inner {
       width: 100%;
-      height: 200px; /* Set a fixed height for the flip card */
+      height: 200px;
+      /* Set a fixed height for the flip card */
       transform-style: preserve-3d;
       transition: transform 0.6s;
     }
@@ -80,10 +82,13 @@
       align-items: center;
       text-align: center;
     }
+
     .card-front h4,
-  .card-back p {
-    color: #333; /* Darker font color */
-  }
+    .card-back p {
+      color: #333;
+      /* Darker font color */
+    }
+
     .card-back {
       transform: rotateY(180deg);
     }
@@ -99,48 +104,93 @@
     }
   </style>
 </head>
+
 <body>
 
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-transparent">
-  <a class="navbar-brand" href="#">Aman Mehra</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarResponsive">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="skills.html">Skills</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#experiences">Experiences</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#projects">Personal Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#qualification">Qualification</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About Me</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li>
-      <!-- Add other navigation items as needed -->
-    </ul>
-  </div>
-</nav>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-transparent">
+    <a class="navbar-brand" href="#">Aman Mehra</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="skills.html">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experiences">Experiences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Personal Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#qualification">Qualification</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <!-- Add other navigation items as needed -->
+      </ul>
+    </div>
+  </nav>
 
-<!-- Skills Section -->
+  <!-- Skills Section -->
+  <!-- Skills Section -->
 <section id="skills">
   <div class="container">
     <h2 class="text-center mt-5 mb-4">My Skills</h2>
-
+    <p class="text-center mb-5">Here are some of the key skills I possess in web development and programming.</p>
     <div class="row">
+      <!-- PHP Skill Card -->
+      <div class="col-md-4">
+        <div class="skill-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h4>PHP</h4>
+            </div>
+            <div class="card-back">
+              <p>Description: Proficient in server-side scripting with PHP, creating dynamic web pages and applications.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laravel Skill Card -->
+      <div class="col-md-4">
+        <div class="skill-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h4>Laravel</h4>
+            </div>
+            <div class="card-back">
+              <p>Description: Learning Laravel for modern and efficient PHP web development.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MySQL Skill Card -->
+      <div class="col-md-4">
+        <div class="skill-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h4>MySQL</h4>
+            </div>
+            <div class="card-back">
+              <p>Description: Proficient in relational database management using MySQL for data storage and retrieval.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- HTML Skill Card -->
       <div class="col-md-4">
         <div class="skill-card">
@@ -183,6 +233,20 @@
         </div>
       </div>
 
+      <!-- jQuery Skill Card -->
+      <div class="col-md-4">
+        <div class="skill-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h4>jQuery</h4>
+            </div>
+            <div class="card-back">
+              <p>Description: Skilled in using jQuery for simplifying client-side scripting and handling events.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Bootstrap Skill Card -->
       <div class="col-md-4">
         <div class="skill-card">
@@ -197,102 +261,63 @@
         </div>
       </div>
 
-      <!-- PHP Skill Card -->
-      <div class="col-md-4">
-        <div class="skill-card">
-          <div class="card-inner">
-            <div class="card-front">
-              <h4>PHP</h4>
-            </div>
-            <div class="card-back">
-              <p>Description: Proficient in server-side scripting with PHP, creating dynamic web pages and applications.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Laravel Skill Card -->
-      <div class="col-md-4">
-        <div class="skill-card">
-          <div class="card-inner">
-            <div class="card-front">
-              <h4>Laravel</h4>
-            </div>
-            <div class="card-back">
-              <p>Description: Learning Laravel for modern and efficient PHP web development.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- jQuery Skill Card -->
-      <div class="col-md-4">
-        <div class="skill-card">
-          <div class="card-inner">
-            <div class="card-front">
-              <h4>jQuery</h4>
-            </div>
-            <div class="card-back">
-              <p>Description: Skilled in using jQuery for simplifying client-side scripting and handling events.</p>
-            </div>
-          </div>
-        </div>
-      </div>
       <!-- Add more skill cards as needed -->
     </div>
   </div>
 </section>
 
-<!-- Bootstrap JS and dependencies -->
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-- Smooth scrolling script -->
-<script>
-  $(document).ready(function() {
-    $("a.nav-link").on('click', function(event) {
-      if (this.hash !== "") {
-        event.preventDefault();
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-        var hash = this.hash;
+  <!-- Smooth scrolling script -->
+  <script>
+    $(document).ready(function () {
+      $("a.nav-link").on('click', function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
 
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-          window.location.hash = hash;
-        });
-      }
+          var hash = this.hash;
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+            window.location.hash = hash;
+          });
+        }
+      });
     });
-  });
-</script>
+  </script>
 
-<!-- Scrolling animation script -->
-<script>
-  $(document).ready(function() {
-    // Highlight the active navigation item
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 50) {
-        $('.navbar').addClass('nav-scroll').removeClass('nav-transparent');
-      } else {
-        $('.navbar').removeClass('nav-scroll').addClass('nav-transparent');
-      }
+  <!-- Scrolling animation script -->
+  <script>
+    $(document).ready(function () {
+      // Highlight the active navigation item
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('.navbar').addClass('nav-scroll').removeClass('nav-transparent');
+        } else {
+          $('.navbar').removeClass('nav-scroll').addClass('nav-transparent');
+        }
+      });
+
+      // Add this script to highlight the active navigation item
+      // Get the current page URL
+      var url = window.location.href;
+
+      // Iterate over each nav link
+      $('ul.navbar-nav li a').each(function () {
+        // Check if the URL contains the href of the current nav link
+        if (url.includes(this.href)) {
+          // Add the 'active' class to highlight the active nav link
+          $(this).addClass('active');
+        }
+      });
     });
-
-    // Add this script to highlight the active navigation item
-    // Get the current page URL
-    var url = window.location.href;
-
-    // Iterate over each nav link
-    $('ul.navbar-nav li a').each(function() {
-      // Check if the URL contains the href of the current nav link
-      if (url.includes(this.href)) {
-        // Add the 'active' class to highlight the active nav link
-        $(this).addClass('active');
-      }
-    });
-  });
-</script>
+  </script>
 
 </body>
+
 </html>
