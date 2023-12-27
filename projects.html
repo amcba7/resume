@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Company - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-y: scroll;
+            background: #948E99;
+            background: -webkit-linear-gradient(to bottom, #2E1437, #948E99);
+            background: linear-gradient(to bottom, #2E1437, #948E99);
+            color: white;
+        }
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            transition: background-color 0.5s ease;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .navbar.nav-scroll {
+            background-color: #000;
+        }
+
+        .navbar.nav-transparent {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .project-card {
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h3 {
+            color: #060606;
+            font-size: 1.5rem;
+        }
+
+        .project-card p {
+            color: #333;
+        }
+
+        .project-card ul {
+            color: black;
+        }
+
+        .project-card li {
+            color: black;
+        }
+
+        .project-card .date {
+            font-size: 14px;
+            color: #888;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding-top: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-transparent">
+    <a class="navbar-brand" href="index.html">Aman Mehra</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="skills.html">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="experiences.html">Experiences</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#qualification">Qualification</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <!-- Add other navigation items as needed -->
+        </ul>
+    </div>
+</nav>
+
+
+    <!-- Content for Your Company Page Goes Here -->
+<div class="container mt-5">
+
+    <!-- Section: Company Projects -->
+    <section id="company-projects">
+        <h2 class="text-center mb-4">Company Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="project-card">
+                    <h3>Project Title 1</h3>
+                    <p>Description: Provide a brief overview of the project.</p>
+                    <p>Technologies Used:</p>
+                    <ul>
+                        <li>Technology 1</li>
+                        <li>Technology 2</li>
+                    </ul>
+                    <!-- Commenting out the Completed line -->
+                    <!-- <p class="date">Completed: January 20XX</p> -->
+
+                    <!-- Company Name as Hyperlink -->
+                    <p>Company: <a href="http://www.yourcompany.com" target="_blank">Your Company</a></p>
+
+                    <!-- Button for Viewing Project Images using Fancybox -->
+                    <button type="button" class="btn btn-primary" data-fancybox="gallery1" data-src="#project1Images">
+                        View Project Images
+                    </button>
+
+                    <!-- View Demo Button -->
+                    <a href="https://www.yourprojectdemo1.com" target="_blank" class="btn btn-success">View Demo</a>
+
+                    <!-- Hidden container for Fancybox images -->
+                    <div style="display: none;">
+                        <div id="project1Images">
+                            <a href="https://placekitten.com/800/600" data-fancybox="gallery1"></a>
+                            <a href="https://placekitten.com/801/600" data-fancybox="gallery1"></a>
+                            <a href="https://placekitten.com/802/600" data-fancybox="gallery1"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 (Repeat structure for additional projects) -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="project-card">
+                    <h3>Project Title 2</h3>
+                    <p>Description: Provide a brief overview of the project.</p>
+                    <p>Technologies Used:</p>
+                    <ul>
+                        <li>Technology 1</li>
+                        <li>Technology 2</li>
+                    </ul>
+                    <!-- Commenting out the Completed line -->
+                    <!-- <p class="date">Completed: February 20XX</p> -->
+
+                    <!-- Company Name as Hyperlink -->
+                    <p>Company: <a href="http://www.yourcompany.com" target="_blank">Your Company</a></p>
+
+                    <!-- Button for Viewing Project Images using Fancybox -->
+                    <button type="button" class="btn btn-primary" data-fancybox="gallery2" data-src="#project2Images">
+                        View Project Images
+                    </button>
+
+                    <!-- View Demo Button -->
+                    <a href="https://www.yourprojectdemo2.com" target="_blank" class="btn btn-success">View Demo</a>
+
+                    <!-- Hidden container for Fancybox images -->
+                    <div id="project2Images" style="display: none;">
+                        <a href="https://placekitten.com/803/600" data-fancybox="gallery2"></a>
+                        <a href="https://placekitten.com/804/600" data-fancybox="gallery2"></a>
+                        <a href="https://placekitten.com/805/600" data-fancybox="gallery2"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more projects as needed -->
+
+    </section>
+
+</div>
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <!-- Smooth scrolling script -->
+    <script>
+        $(document).ready(function () {
+            $("a.nav-link").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- Scrolling animation script -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('.navbar').addClass('nav-scroll').removeClass('nav-transparent');
+                } else {
+                    $('.navbar').removeClass('nav-scroll').addClass('nav-transparent');
+                }
+            });
+
+            var url = window.location.href;
+
+            $('ul.navbar-nav li a').each(function () {
+                if (url.includes(this.href)) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
